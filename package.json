@@ -1,0 +1,52 @@
+{
+  "name": "@stream3/sdk",
+  "version": "0.0.1-beta2",
+  "description": "Node.js SDK for running stream3 actions and operations, managing variables, and subscribing to events",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./udp": {
+      "types": "./dist/udp.d.ts",
+      "import": "./dist/udp.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE",
+    "examples"
+  ],
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "prepack": "npm run build"
+  },
+  "engines": {
+    "node": ">=26"
+  },
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "tag": "latest"
+  },
+  "sideEffects": false,
+  "types": "./dist/index.d.ts",
+  "keywords": [
+    "stream3",
+    "automation",
+    "obs",
+    "typescript",
+    "sdk"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kipp-Software/stream3-sdk.git"
+  },
+  "devDependencies": {
+    "@types/node": "26.6.6",
+    "typescript": "7.0.2"
+  }
+}
